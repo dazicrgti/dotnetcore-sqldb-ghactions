@@ -1,9 +1,6 @@
 name: Create Azure Resources
 on: 
-    push:
-        paths: 
-        - 'ARM/**'
-        - '.github/workflows/infraworkflow.yml'
+    [push]
 
 env:
     AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID  }}    # set this to your Azure Subscription Id
